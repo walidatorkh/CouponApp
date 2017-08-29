@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/imageViewCoupon"
+        android:layout_margin="10dp"
+        tools:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewTitle"
+        android:layout_toRightOf="@+id/imageViewCoupon"
+        android:layout_alignTop="@+id/imageViewCoupon"
+        android:textSize="20sp"
+        tools:text="Title..." />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewStartDate"
+        android:layout_toRightOf="@+id/imageViewCoupon"
+        android:layout_below="@+id/textViewTitle"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        tools:text="1/5/2017" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewEndDate"
+        android:layout_alignTop="@+id/textViewStartDate"
+        android:layout_toRightOf="@+id/textViewStartDate"
+        android:layout_marginLeft="50dp"
+        android:textSize="20sp"
+        tools:text="6/8/2018" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewPrice"
+        android:layout_alignLeft="@+id/textViewEndDate"
+        android:layout_alignTop="@+id/textViewTitle"
+        android:textSize="20sp"
+        tools:text="Price..." />
+
+</RelativeLayout>
